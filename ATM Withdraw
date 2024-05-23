@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+public class ATM {
+    
+    public static void main(String args[]) {
+        Scanner s = new Scanner(System.in);
+        
+        int initial_Balance = 20000;
+        int atm_Pin = 123;
+        int atm_Cash_Available = 5000;
+        
+        System.out.print("Enter your ATM PIN: ");
+        int entered_Pin = s.nextInt();
+        
+        if (entered_Pin != atm_Pin) {
+            System.out.println("Incorrect PIN");
+            return;
+        }
+    
+        System.out.print("Enter the amount to withdraw: ");
+        int withdraw_Amount = s.nextInt();
+        
+        if (withdraw_Amount % 100 != 0) {
+            System.out.println("Invalid amount. Please enter an amount that is a multiple of 100");
+            return;
+        }
+        
+        if (withdraw_Amount > initial_Balance) {
+            System.out.println("Insufficient balance");
+            return;
+        }
+        
+        if (withdraw_Amount > atm_Cash_Available) {
+            System.out.println("ATM has insufficient cash");
+            return;
+        }
+    
+        initial_Balance -= withdraw_Amount;
+        atm_Cash_Available -= withdraw_Amount;
+        
+        System.out.println("Transaction successful. Your updated balance is: Rs. " + initial_Balance);
+    }
+}
