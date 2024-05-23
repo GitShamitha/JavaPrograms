@@ -5,9 +5,9 @@ public class ATM {
     public static void main(String args[]) {
         Scanner s = new Scanner(System.in);
         
-        int initial_Balance = 20000;
-        int atm_Pin = 123;
-        int atm_Cash_Available = 5000;
+        int initial_Balance = 10000;
+        int atm_Pin = 1234;
+        int atm_Cash_Available = 8000;
         
         System.out.print("Enter your ATM PIN: ");
         int entered_Pin = s.nextInt();
