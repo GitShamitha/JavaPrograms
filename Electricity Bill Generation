@@ -1,3 +1,14 @@
+/*Write a code to take the service Number, previous reading, and current reading as input and then
+find the number of units consumed, then calculate the cost of electricity as follows.
+If units consumed is &lt;100 then cost @Rs.1/per unit.
+Else if units consumed &lt;150 and &gt;=100 then cost @Rs.1.5 per unit.
+Else if unit consumed &lt;200 and &gt;=150 then cost @Rs.2 per unit.
+Else if &gt;=200 units then cost @Rs.2.5 per unit.
+Now calculate 5% CGST on the price and 15% SGST then find the total amount to pay.
+Display all the details on the output screen.*/
+
+
+
 import java.util.Scanner;
 
 public class electricity {
