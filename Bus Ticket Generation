@@ -1,3 +1,18 @@
+/*Write a code to take boarding stop and destination stop values as integers, the number of adult
+passengers, and a number of child passengers as integers. Then find the number of stops the
+passengers are travelling. Calculate Rs.10 per adult passenger per stop. Calculate Rs.5 per child
+passenger and then find the cost of the ticket( including adult ticket cost and child ticket cost).
+No apply an offer as follows to the ticket.
+If No.of adult passengers are &gt;=5 then give a discount of 20% of cost of the ticket.
+Else If No.of adult passengers are 4 then give a discount of 15% of cost of the ticket.
+Else If No.of adult passengers are 3 then give a discount of 10% of cost of the ticket.
+Else If No.of adult passengers are 2 then give a discount of 5% of cost of the ticket.
+Else If No.of adult passengers are 1 then give a discount of 0% of cost of the ticket.
+Then calculate a 10% tax on the cost of the ticket.
+Then find the total price of the ticket including tax.
+Then display all the data on the output screen.*/
+
+
 import java.util.Scanner;
 
 public class Ticket{
