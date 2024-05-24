@@ -1,3 +1,14 @@
+/*You are given an Initial account balance of 10000, an ATM pin as 1234, and Cash available in the
+machine as 8000. Then Write a code to perform the withdraw operation.
+Read the Pin from the use and verify whether it is correct or not.
+If correct, read the amount ‘X’ to withdraw.
+Check given X is a valid amount or not (multiple of 100).
+If X is a valid amount, Check X&lt;=balance.
+If Yes, then check X amount is available in the ATM machine or not.
+If cash is available then print the updated balance.
+Else print Transaction failed.*/
+
+
 import java.util.Scanner;
 
 public class ATM {
